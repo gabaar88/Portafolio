@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+.fondo-inicio {
+    background: linear-gradient(to right, #670048, #e632d7); 
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+.nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.redes {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+.nav-links {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+}
+a {
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+}
+.nav-links:hover {
+    border-bottom: 2px solid #ff5b00;
+}
+i:hover {
+    color: #ff5b00;
+}
+.navbar-icon {
+    color: rgb(255, 255, 255);
+    display: none;
+    cursor: pointer;
+}
+h1 {
+    font-size: 3rem;
+    color: #00deef;
+}
+.contenido {
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+}
+.fila {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    }
+.columna {
+    width: 50%;
+    }
+.columna-servicios {
+    text-align: center;
+    width: 30%;
+    }
+.fila-servicios {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    padding-bottom: 2rem;
+}
+h2 {
+    color: aliceblue;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.img-inicio {
+    width: 100%;
+}
+.logos-programas{
+    width: 100%;
+}
+.biografia {
+    color: aliceblue;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 26px;
+}
+.btn-cv {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff5b00, #ff9900);
+    transition: .5s;
+    color: aliceblue;
+    width: 150px;
+    margin-top: 15px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.tarjetas {
+    border: 1px solid #8d8d8d;
+    height: 300px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+h3 {
+    margin-bottom: 27px;
+    margin-top: 20px;
+}
+.p-servicios {
+    color: #313131;
+    line-height: 28px;
+    font-size: 15px;
+}
+.habilidades {
+    padding: 0 20px;
+    background: linear-gradient(to right, #670048, #e632d7);
+    height: 10rem;
+}
+.fila-habilidades {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    align-items: center;
+    gap: 1rem;
+    padding: 30px;
+    margin-bottom: 2rem;
+}
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 3rem;
+}
+.columna-iconos {
+    text-align: center;
+    width: 10%;
+    }
+.contenedor-iconos{
+font-size: 2rem;
+}
+.trabajos{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap:30px;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8d8d8d ;
+    border-radius: 10px;
+}
+.info{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color:#670048;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+.info h3{
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.info a{
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: #00deef;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.item:hover .info{
+    opacity: 1;
+    top: 0;
+}
+
+.inicio .fila .col {
+    width: 50%;
+}
+.inicio .fila .col h2 {
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.contacto{
+    background:
+        linear-gradient(to right, #670048, #e632d7);
+        background-size: cover;
+        color: #fff;
+        margin-top: 100px;
+        padding: 80px 20px;
+}
+.contacto .contenedor-contacto {
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contacto .contenedor-contacto .fila {
+    display: flex;
+}
+.contacto .contenedor-contacto .fila .col {
+    width: 50%;
+}
+.contacto .contenedor-contacto .info {
+    margin-bottom: 30px;
+    border-left: 3px solid #ffffff;
+    padding-left: 8px;
+}
+.contacto .contenedor-contacto .info p {
+    color: #ffffff;
+}
+.contacto input, .contacto textarea {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #ffffff ;
+    margin-bottom: 20px;
+    outline: none;
+    color: #ffffff;
+}
+.contacto .btn{
+    background-color: none;
+    padding: 5px 40px;
+    border: 2px solid;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff5b00, #ff9900);
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+h5 {
+    font-size: 2rem;
+}
+
+.contenedor-info-mensaje {
+    padding: 1rem 0;
+}
+
+.contacto-parrafo{
+font-size: 1rem;
+}
+
+
+@media screen and (max-width:800px) {
+    .redes {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #nav.responsive{
+        background-color: #670048;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    }
+    #nav.responsive a{
+        font-size: 30px;
+    }
+    #icono-nav{
+        display: block;
+    }
+
+    h1{
+    font-size: 2.2rem;
+    }
+
+    header {
+    padding: 1.5rem;
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+h4{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+}
+   .navbar-icon {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .fondo-inicio {
+        height: auto;
+    }
+
+    .fondo-inicio .fila {
+        display: block;
+        padding: 0 1rem;
+    }
+
+    .fondo-inicio .fila .columna {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contenedor-img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 1rem;
+    }
+
+    .img-inicio {
+        margin-bottom: 20px;
+    }
+
+    .servicios {
+        padding: 20px;
+    }
+
+    .fila-servicios {
+        display: block;
+        top: 0;
+    }
+
+    .columna-servicios {
+        width: 85%;
+        margin: auto;
+    }
+
+    .tarjetas {
+        margin-bottom: 20px;
+        height: 265px;
+    }
+
+    .p-servicios {
+        font-size: 0.9rem;
+        line-height: 18px;
+    }
+
+    .biografia {
+        font-size: 0.9rem;
+        line-height: 18px;
+        padding: 0 1rem;
+    }
+
+.btn-cv {
+    margin-bottom: 20px;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.habilidades {
+    height: 6rem
+    ;
+}
+
+.columna-iconos {
+    margin: 0;
+}
+
+.fila-habilidades {
+    padding: 2rem 0rem;
+}
+
+.contacto {
+    margin-top: 9%;
+}
+
+.contacto-parrafo {
+    font-size: 0.6rem;
+}
+.contacto .fila{
+    display:  block !important;
+}
+.contacto .fila .col{
+    text-align: center;
+    width: 100% !important;
+}
+.contacto .fila .col .contenedor-info-mensaje{
+    float: left;
+    font-size: 12px;
+    width: 25%;
+}
+
+.contacto .fila{
+    display:  block !important;
+}
+.contacto .fila .col{
+    text-align: center;
+    width: 100% !important;
+}
+.contacto .fila .col .contenedor-info-mensaje{
+    float: left;
+    font-size: 12px;
+    width: 25%;
+}
+
+h5 {
+   font-size: 1rem;
+}
+
+.col {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contacto h2 {
+    padding: 0;
+}
+
+.contacto .contenedor-contacto .fila{
+    margin: 0;
+    padding: 0;
+}
+}
